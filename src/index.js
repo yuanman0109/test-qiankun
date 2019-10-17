@@ -37,7 +37,7 @@ function render({ appContent, loading }) {
   //   app.loading = loading;
   // }
 
-  const container = document.getElementById('container');
+  const container = document.getElementById('root');
   ReactDOM.render(<Framework loading={loading} content={appContent}/>, container);
 }
 
@@ -70,7 +70,7 @@ runDefaultMountEffects('/react');
 
 start();
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
